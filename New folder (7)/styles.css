@@ -1,0 +1,139 @@
+@import url('e69d16bb-4976-44b3-be88-d9071675f14a.jpeg');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.5s ease; /* Added transition to all elements */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: #000000;
+    font-size: 0.8em;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(7, 19, 12, 0.8);
+    border-radius: 8px;
+    transform: scale(1); /* Added transformation */
+}
+
+.main:hover {
+    transform: scale(1.02); /* Added hover transformation */
+}
+
+.header {
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    background: linear-gradient(to right, #ffaf69, #9d3f00);
+    color: #FF0000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.verse {
+    font-family: 'Courier New', monospace;
+    font-size: 2em;
+    line-height: 1.8em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.verse.one {
+    color: #FFA500;
+    background-image: url('c942164c-0522-460a-bc78-e66c93449813.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.verse.two {
+    color: #800080;
+    background-image: url('e96113d4-7a12-4eee-9088-6cc92fb17b20.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.verse.three {
+    color: #008000;
+    background-image: url('mayur-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.verse.four {
+    color: #0000FF;
+    background-image: url('f8c3acee-a806-4e1c-a82a-d8445ead0e41.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.one, .two, .three, .four {
+    font-family: 'Times New Roman', serif;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.one:hover, .two:hover, .three:hover, .four:hover {
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+    transform: scale(1.02);
+}
+
+a {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.8em;
+    color: #FFC0CB;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #FF69B4;
+}
+
+/* Add a simple animation to the header */
+@keyframes header-animation {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+    animation: header-animation 2s ease-out;
+}
+
+/* Add a hover animation to the verses */
+@keyframes verse-hover-animation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.verse:hover {
+    animation: verse-hover-animation 0.5s ease-in-out;
+}
+
+/* Add a hover animation to the links */
+@keyframes link-hover-animation {
+    0% { color: #FFC0CB; }
+    50% { color: #FF69B4; }
+    100% { color: #FFC0CB; }
+}
+
+a:hover {
+    animation: link-hover-animation 0.5s ease-in-out;
+}
